@@ -1,0 +1,1 @@
+{"version":3,"sources":["scripts.js"],"names":["toggleMenu","document","getElementById","classList","toggle"],"mappings":";;AAAA,SAASA,UAAT,GAAsB;AAClBC,EAAAA,QAAQ,CAACC,cAAT,CAAwB,YAAxB,EAAsCC,SAAtC,CAAgDC,MAAhD,CAAuD,MAAvD;AACH","sourcesContent":["function toggleMenu() {\r\n    document.getElementById(\"primaryNav\").classList.toggle(\"hide\");\r\n}"],"file":"scripts.dev.js"}

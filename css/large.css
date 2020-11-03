@@ -1,0 +1,69 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+  nav button {
+    display: none;
+  }
+
+  nav ul.hide {
+    display: block;
+  }
+
+  nav ul li a {
+    padding: .6rem 1rem;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column {
+    display: grid;
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+
+  /*--- main ---*/
+  .storyGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  div.storyGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  span {
+    display: block;
+    text-align: center;
+    font-size: 4rem;
+    max-width: 80rem;
+  }
+
+  .teaser,
+  .lead {
+    padding: .5rem 2vw;
+  }
+
+  .teaser img,
+  .lead img {
+    width: 100%;
+  }
+
+  .lead {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+  }
+
+  footer {
+    background-color: rgb(175, 175, 175);
+    justify-self: center;
+  }
+}
+
+/*end large */

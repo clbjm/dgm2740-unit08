@@ -1,0 +1,126 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+/*--- main ---*/
+div.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+span {
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  max-width: 80rem;
+}
+
+.teaser,
+.lead {
+  padding: .5rem 2vw;
+}
+
+.teaser img,
+.lead img {
+  width: 100%;
+}
+
+.lead {
+  grid-column: 1 / span 2;
+}
+
+/* --- navagation*/
+
+nav button {
+  margin: .2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: rgb(173, 173, 173);
+}
+
+nav {
+  background-color: #666;
+  font-family: verdana, sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  float: left;
+  width: 25%;
+}
+
+nav ul li a {
+  display: block;
+  background-color: #444;
+  color: #000;
+  border-left: 1px solid #777;
+  padding: .8rem 2%;
+  text-decoration: none;
+  border-top: 1px solid #b5b5b5;
+  font-size: .9rem;
+  text-align: center;
+}
+
+nav ul li:first-child a {
+  border-left: none;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb(177, 177, 177);
+}
+
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+/* footer*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: rgb(175, 175, 175);
+  text-align: center;
+}
+
+.column {
+  display: grid;
+  float: left;
+  width: 100%;
+  padding: 10px;
+  flex: 40%;
+  max-width: 70rem;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
